@@ -8,7 +8,7 @@
 
 	assert = buster.assert;
 	refute = buster.refute;
-	fail = buster.assertions.fail;
+	fail = buster.fail;
 
 	word = gent.string(gent.integer(1, 10), gent.char('a', 'z'));
 
@@ -100,5 +100,6 @@
 
 })(
 	require('buster'),
-	require('../../../../lib/loader/moduleId')
+	require('../../../../lib/loader/moduleId'),
+	require('gent/test-adapter/buster')
 );

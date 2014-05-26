@@ -5,7 +5,7 @@ var assert, refute, fail;
 
 assert = buster.assert;
 refute = buster.refute;
-fail = buster.assertions.fail;
+fail = buster.fail;
 
 buster.testCase('refs', {
 
@@ -100,7 +100,7 @@ buster.testCase('refs', {
 	'should fail wiring from plugin when target missing': function() {
 		return wire({
 			propTest: {
-				create: 'test',
+				create: {},
 				properties: {
 					thingProp: { $ref: 'thing' }
 				}

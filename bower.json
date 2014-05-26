@@ -1,10 +1,10 @@
 {
 	"name": "wire",
-	"version": "0.10.5",
+	"version": "0.10.8",
 	"main": "./wire.js",
 	"dependencies": {
 		"meld": "~1",
-		"when": "~2",
+		"when": "~3",
 		"poly": "~0"
 	},
 	"devDependencies": {
